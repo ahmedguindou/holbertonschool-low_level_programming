@@ -1,43 +1,39 @@
+
 #include "main.h"
 
 /**
- * times_table - Prints the 9 times table, starting with 0
- *
- * This function prints a 10x10 multiplication table from 0 to 9,
- * formatted with proper alignment, where each number is separated
- * by a comma and space.
- *
- * Return: void
- */
+  * times_table - Prints the 9 times table, starting with 0
+  *
+  * Return: empty output
+  */
 void times_table(void)
 {
-int i, j, result;
-for (i = 0; i < 10; i++)
+int x, y, z, u, d;
+for (x = 0; x <= 9; x++)
 {
-for (j = 0; j < 10; j++)
+for (y = 0; y <= 9; y++)
 {
-result = i * j;
-if (j == 0)
+z = x * y;
+if (z > 9)
 {
-_putchar(result + '0');
+u = z % 10;
+d = (z - u) / 10;
+_putchar(44);
+_putchar(32);
+_putchar(d + '0');
+_putchar(u + '0');
 }
 else
 {
-_putchar(',');
-_putchar(' ');
-if (result < 10)
+if (y != 0)
 {
-_putchar(' ');
-_putchar(result + '0');
+_putchar(44);
+_putchar(32);
+_putchar(32);
 }
-else
-{
-_putchar((result / 10) + '0');
-_putchar((result % 10) + '0');
+_putchar(z + '0');
 }
 }
-}
-_putchar('$');
 _putchar('\n');
 }
 }
