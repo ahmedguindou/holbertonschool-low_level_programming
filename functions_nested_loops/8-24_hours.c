@@ -9,7 +9,7 @@
  *
  * Return: void (does not return a value)
  */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 int h;
 int m;
