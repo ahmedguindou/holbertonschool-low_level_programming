@@ -1,16 +1,14 @@
 #include "main.h"
-#include <unistd.h>
-
 /**
- * mul - Multiplies two integers
- * @a: The first integer to be multiplied
- * @b: The second integer to be multiplied
- * Return: The result of the multiplication of a and b
+ * print_numbers - Prints the numbers from 0 to 9, followed by a new line
+ *
+ * Description: This function uses _putchar to print each number 
+ * from 0 to 9, followed by a newline character.
  */
 void print_numbers(void)
 {
 char num;
-for (num = '0' ; num <= '9' ; num++ )
+for (num = '0' ; num <= '9' ; num++)
 {
 _putchar(num);
 }
