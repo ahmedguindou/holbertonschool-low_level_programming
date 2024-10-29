@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * print_numbers - Prints the numbers from 0 to 9, followed by a new line
- *
- * Description: This function uses _putchar to print each number 
- * from 0 to 9, followed by a newline character.
- */
+* print_numbers - Prints the numbers from 0 to 9, followed by a new line
+* Description: This function uses _putchar to print each number
+* from 0 to 9, followed by a newline character.
+*/
 void print_numbers(void)
 {
 char num;
