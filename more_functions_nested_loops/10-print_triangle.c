@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * print_diagonal - Draws a diagonal line on the terminal.
- * @n: The number of times the character '\' should be printed.
+ * print_triangle - Prints a right-aligned triangle using the '#' character.
+ * @size: The size (height) of the triangle.
  *
- * Description: If n is 0 or less, the function only prints a newline.
+ * Description: If size is 0 or less, the function prints only a newline.
  */
-void print_triangle(int size) {
+void print_triangle(int size)
+{
 int i, j, k;
 if (size <= 0)
 {
