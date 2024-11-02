@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * _puts - Prints a string followed by a new line.
- * @str: Pointer to the string to be printed.
+ * print_rev - Prints a string in reverse followed by a new line.
+ * @s: Pointer to the string to be printed in reverse.
  *
- * Description: This function prints each character of a string
- * to the standard output, followed by a new line.
+ * Description: This function takes a string and prints each character
+ * in reverse order, followed by a new line.
  */
 void print_rev(char *s)
 {
-int length =0;
+int length = 0;
 int i;
 while (s[length] != ('\0'))
 {
