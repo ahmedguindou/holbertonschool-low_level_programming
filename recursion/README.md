@@ -1,0 +1,1 @@
+This project demonstrates the concept of recursion in C through various functions. Each function uses recursion to solve common problems without using loops or iterative constructs, showcasing the power and simplicity of recursive functions in C.
