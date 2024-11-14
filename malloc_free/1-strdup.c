@@ -1,24 +1,31 @@
 #include <stdlib.h>
-#include <string.h>
-
+#include "main.h"
 /**
- * _strdup - Returns a pointer to a newly allocated space in memory,
- * which contains a copy of the string given as a parameter.
- * @str: The string to duplicate.
- * Return: A pointer to the duplicated string, or NULL if insufficient
- * memory was available or if str is NULL.
+ * str_concat - Concatenates two strings.
+ * @s1: The first string.
+ * @s2: The second string.
+ *
+ * Return: A pointer to the concatenated string, or NULL on failure.
  */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
-unsigned int length, i;
-char *dup_str;
-if (str == NULL)
+char *concatenated;
+int len1 = 0, len2 = 0, i, j;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+while (s1[len1])
+len1++;
+while (s2[len2])
+len2++;
+concatenated = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+if (concatenated == NULL)
 return (NULL);
-length = strlen(str);
-dup_str = malloc(sizeof(char) * (length + 1));
-if (dup_str == NULL)
-return (NULL);
-for (i = 0; i <= length; i++)
-dup_str[i] = str[i];
-return (dup_str);
+for (i = 0; s1[i]; i++)
+concatenated[i] = s1[i];
+for (j = 0; s2[j]; j++)
+concatenated[i + j] = s2[j];
+concatenated[i + j] = '\0';
+return (concatenated);
 }
