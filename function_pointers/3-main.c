@@ -22,7 +22,7 @@ if (op_func == NULL)
 printf("Error\n");
 exit(99);
 }
-if ((*argv[2] == '/' && *argv[2] == '%') && num2 == 0)
+if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
 {
 printf("Error\n");
 exit(100);
