@@ -20,7 +20,7 @@ free(new_node);
 return (NULL);
 }
 new_node->len = 0;
-while (str[new_node->] != '\0')
+while (str[new_node->len] != '\0')
 new_node->len++;
 new_node->next = *head;
 *head = new_node;
