@@ -17,7 +17,8 @@ if (fd == -1)
 return (-1);
 if (text_content == NULL)
 text_content = "";
-for (counter = 0; text_content[counter] != '\0'; counter++);
+for (counter = 0; text_content[counter] != '\0'; counter++)
+;
 write_ret = write(fd, text_content, counter);
 if (write_ret == -1)
 return (-1);
